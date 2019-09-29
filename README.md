@@ -5,7 +5,7 @@ A wrapper around the browserify transform [envify](http://npmjs.com/envify) that
 ## Install
 
 ```sh
-npm install --save-dev dotenvify
+npm install --save-dev @sethvincent/dotenvify
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ Use the environment variables in your frontend javascript.
 Next run:
 
 ```shell
-browserify index.js -t dotenvify > bundle.js
+browserify index.js -t @sethvincent/dotenvify > bundle.js
 ```
 
 > Replace index.js and bundle.js with the filepaths used in your project.
@@ -31,7 +31,7 @@ The usage of the environment variables in the js will be replaced with the value
 ### Include dotenv options
 
 ```shell
-browserify index.js -t [ dotenvify --path some/other/path/.env ] > bundle.js
+browserify index.js -t [ @sethvincent/dotenvify --path some/other/path/.env ] > bundle.js
 ```
 
 See more [dotenv options](http://npmjs.com/dotenv)
@@ -43,7 +43,7 @@ npm i -D budo
 ```
 
 ```shell
-budo index.js:bundle.js -- -t dotenvify
+budo index.js:bundle.js -- -t @sethvincent/dotenvify
 ```
 
 ## License

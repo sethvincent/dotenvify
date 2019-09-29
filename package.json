@@ -1,0 +1,27 @@
+{
+  "name": "@sethvincent/dotenvify",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "example": "browserify example/index.js -t [ ./index --path ./example/.env  ] > example/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sethvincent/dotenvify.git"
+  },
+  "keywords": [
+    "dotenv",
+    "envify"
+  ],
+  "author": "sethvincent <sethvincent@gmail.com> (https://sethvincent.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sethvincent/dotenvify/issues"
+  },
+  "homepage": "https://github.com/sethvincent/dotenvify#readme",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "envify": "^4.1.0"
+  }
+}

@@ -1,5 +1,5 @@
 const dotenv = require('dotenv')
-const envify = require('envify')
+const envify = require('envify/custom')
 
 module.exports = function dotenvify (env, opts) {
   const { error } = dotenv.config(opts)
